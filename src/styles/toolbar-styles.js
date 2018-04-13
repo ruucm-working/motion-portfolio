@@ -82,7 +82,6 @@ const containerStyles = (s, width) => ({
 });
 
 const toolbarStyles = (s, width) => ({
-  backgroundColor: width < 550 ? 'rgba(0,0,0,0.05)' : 'transparent',
   paddingLeft: width < 550 ? '1rem' : '2rem',
   paddingRight: width < 550 ? '1rem' : '2rem'
 });
