@@ -18,15 +18,13 @@ const Canvas = ({ core, square, triangle, circle, page01 }) => {
 
   const content = (width !== 0 && height !== 0) ? (
     <g>
-      <BG fill={ bgFill }
+      {/* <BG fill={ bgFill }
         w={ width }
-        h={ height } />
+        h={ height } /> */}
 
       {/* <Square { ...square } /> */}
       {/* <Triangle { ...triangle } /> */}
       {/* <Circle { ...circle } /> */}
-      {log('triangle', triangle)}
-      {log('page01', page01)}
       <Page01 { ...page01 } />
     </g>
   ) : null;

@@ -26,8 +26,6 @@ class Toolbar extends Component {
         style={ toolbarStyles }>
         <div className="flex mx-auto col-12 flex-stretch"
           style={ containerStyles }>
-          {log('togglePage01', togglePage01)}
-          {log('toggleTriangle', toggleTriangle)}
           <div className="mr1 circle"
             style={ circleStyles }
             onClick={ togglePage01 }
@@ -51,7 +49,7 @@ class Toolbar extends Component {
             <svg viewBox={ width < 400 ? '0 0 40 20' : '0 0 20 20' }
               ref="toggleAbout">
               <text x="10" y="13">
-                About
+                {/* About */}
               </text>
             </svg>
           </div>

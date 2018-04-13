@@ -57,12 +57,12 @@ class App extends Component {
 
     return (
       <div className="overflow-hidden">
-        <ColourSelector { ...colourSelectorProps } />
+        {/* <ColourSelector { ...colourSelectorProps } /> */}
         <Contents { ...this.props } />
         <Canvas { ...this.props } />
         <Toolbar { ...toolbarProps } />
-        <About toggleAbout={ this.props.toggleAbout }
-          isVisible={ this.props.core.aboutModalVisible } />
+        {/* <About toggleAbout={ this.props.toggleAbout }
+          isVisible={ this.props.core.aboutModalVisible } /> */}
       </div>
     );
   }
