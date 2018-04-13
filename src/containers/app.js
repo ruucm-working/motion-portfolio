@@ -40,6 +40,7 @@ class App extends Component {
       toggleSquare: this.props.toggleSquare,
       toggleCircle: this.props.toggleCircle,
       togglePage01: this.props.togglePage01,
+      togglePage02: this.props.togglePage02,
       toggleAbout: this.props.toggleAbout,
       width: this.props.core.windowWidth,
       fills: {

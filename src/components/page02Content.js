@@ -12,9 +12,9 @@ const triangleStyles = {
 };
 
 /**
- * The Page01Content
+ * The Page02Content
  */
-class Page01Content extends Component {
+class Page02Content extends Component {
   shouldComponentUpdate(nextProps) {
     return !R.equals(this.props, nextProps);
   }
@@ -29,7 +29,7 @@ class Page01Content extends Component {
     }
   }
   appear = () => {
-    TweenLite.fromTo(this._page01Content, 1, {
+    TweenLite.fromTo(this._page02Content, 1, {
       left: 0, opacity: 0
     },
     {
@@ -37,7 +37,7 @@ class Page01Content extends Component {
     })
   }
   disappear = () => {
-    TweenLite.fromTo(this._page01Content, 1, {
+    TweenLite.fromTo(this._page02Content, 1, {
       left:0, opacity:1
     },
     {
@@ -50,15 +50,15 @@ class Page01Content extends Component {
     const d = buildD(vertices);
 
     return (
-      <div id='page01-content' ref={(c) => this._page01Content = c} >
-        <h2>page01-content</h2>
+      <div id='page02-content' ref={(c) => this._page02Content = c} >
+        <h2>page02-content</h2>
       </div>
     );
   };
 
 }
 
-export default Radium(Page01Content);
+export default Radium(Page02Content);
 
 /**
  * Utilities

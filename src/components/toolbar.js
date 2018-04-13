@@ -16,7 +16,7 @@ class Toolbar extends Component {
   }
 
   render() {
-    const { toggleTriangle, toggleSquare, toggleCircle, togglePage01, toggleAbout } = this.props;
+    const { toggleTriangle, toggleSquare, toggleCircle, togglePage01, togglePage02, toggleAbout } = this.props;
     const { toolbarStyles, containerStyles, circleStyles,
       triangleStyles, squareStyles, aboutButtonStyles,
       width } = getStyles(this.props);
@@ -34,7 +34,7 @@ class Toolbar extends Component {
 
           <div className="mr1 circle"
             style={ triangleStyles }
-            onClick={ toggleTriangle }
+            onClick={ togglePage02 }
             ref="triangle">
           </div>
 

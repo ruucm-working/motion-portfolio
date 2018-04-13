@@ -12,9 +12,9 @@ const triangleStyles = {
 };
 
 /**
- * The Page01
+ * The Page02
  */
-class Page01 extends Component {
+class Page02 extends Component {
   componentDidMount() {
     // const { y, r } = this.props;
 
@@ -30,7 +30,8 @@ class Page01 extends Component {
   render() {
     const { fill, vertices, visible, x, y, r } = this.props;
     const d = buildD(vertices);
-
+    log('fill', fill);
+    
     return (
       <g style={{
         transform: 'translate3d(' + x + 'px, ' + y + 'px, 0)'
@@ -42,14 +43,14 @@ class Page01 extends Component {
           style={ triangleStyles }
           fill={ fill }
           d={ d }
-          clipPath="url(#page01-mask)" />
+          clipPath="url(#page02-mask)" />
       </g>
     );
   };
 
 }
 
-export default Radium(Page01);
+export default Radium(Page02);
 
 
 /**
@@ -63,7 +64,7 @@ class Mask extends Component {
 
   componentDidUpdate(prevProps) {
     const { visible } = this.props;
-    log('this.props(page01)', this.props)
+    log('this.props(page02)', this.props)
     if (prevProps.visible === visible) { return; }
 
     if (visible) {
@@ -76,6 +77,7 @@ class Mask extends Component {
   appear = () => {
     const dist = 3 * this.props.r * 0.39;
     log('dist', dist);
+    log('this._circleMask', this._circleMask);
     TweenLite.fromTo(this._circleMask, 6, {
       attr: { cx: -dist, cy: dist }
     }, {
@@ -98,7 +100,7 @@ class Mask extends Component {
     const { visible, r } = this.props;
 
     return (
-      <clipPath id="page01-mask">
+      <clipPath id="page02-mask">
         <circle r={ 1.5 * r }
           cx={ 0 } cy={ 0 }
           ref={(c) => this._circleMask = c} />

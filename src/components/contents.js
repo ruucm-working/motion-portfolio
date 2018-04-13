@@ -5,6 +5,7 @@ import Square from '../components/square';
 import Triangle from '../components/triangle';
 import Page01 from '../components/page01';
 import Page01Content from '../components/page01Content';
+import Page02Content from '../components/page02Content';
 import { log } from 'ruucm-util';
 
 /**
@@ -12,7 +13,7 @@ import { log } from 'ruucm-util';
  * This component generates the base SVG
  * and sets up all the sub-components
  */
-const Contents = ({ core, square, triangle, circle, page01 }) => {
+const Contents = ({ core, square, triangle, circle, page01, page02 }) => {
 
   const { width, height, bgFill } = core;
   const viewBox = [0, 0, width, height].join(' ');
@@ -36,6 +37,7 @@ const Contents = ({ core, square, triangle, circle, page01 }) => {
     <div className='contents'>
       <h1>hey</h1>
       <Page01Content { ...page01 } />
+      <Page02Content { ...page02 } />
     </div>
   );
 

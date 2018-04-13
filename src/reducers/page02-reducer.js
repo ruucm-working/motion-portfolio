@@ -1,4 +1,4 @@
-import { WINDOW_RESIZE, SET_PALETTE, TOGGLE_PAGE01 }
+import { WINDOW_RESIZE, SET_PALETTE, TOGGLE_PAGE02 }
   from '../actions/constants';
 import { PALETTE, BASE } from './constants';
 import Sounds from '../audio';
@@ -14,9 +14,9 @@ const initialState = {
     [0, 0]
   ],
   r: 0,
-  fill: PALETTE.JAZZY.page01,
+  fill: PALETTE.JAZZY.page02,
   visible: true,
-  sound: Sounds.JAZZY.page01
+  sound: Sounds.JAZZY.page02
 };
 
 /**
@@ -24,23 +24,23 @@ const initialState = {
  * @param  {Object} state
  * @param  {Object} action
  */
-export default function page01(state = initialState, action) {
+export default function page02(state = initialState, action) {
   log('state', state);
-  log('action.type(page01)', action.type);
+  log('action.type(page02)', action.type);
   switch (action.type) {
 
     case WINDOW_RESIZE:
       return R.merge(state, getTriangleVertices(action));
 
-    case TOGGLE_PAGE01:
+    case TOGGLE_PAGE02:
       const visible = !state.visible;
       state.sound.play();
       return R.merge(state, { visible });
 
     case SET_PALETTE:
       return R.merge(state, {
-        fill: PALETTE[action.palette].page01,
-        sound: Sounds[action.palette].page01
+        fill: PALETTE[action.palette].page02,
+        sound: Sounds[action.palette].page02
       });
 
     default:
@@ -50,7 +50,7 @@ export default function page01(state = initialState, action) {
 }
 
 /**
- * Get the page01 vertices
+ * Get the page02 vertices
  * @param  {Number} options.width
  * @param  {Number} options.height
  */

@@ -5,6 +5,7 @@ export const JAZZY = {
   circle: '#FC615D',
   triangle: '#FDBC40',
   page01: '#FC615D',
+  page02: '#FCBA4E',
   square: '#34C84A',
   tag: '#00ffff'
 };
@@ -13,6 +14,7 @@ export const AWAKE = {
   circle: '#45407f',
   triangle: '#4533ff',
   page01: '#4533ff',
+  page02: '#4533ff',
   square: '#f1c7aa',
   tag: '#ffe133'
 };
@@ -21,6 +23,7 @@ export const SLEEPY = {
   circle: '#ebf3ff',
   triangle: '#4533ff',
   page01: '#4533ff',
+  page02: '#4533ff',
   square: '#2494fa',
   tag: '#4533ff'
 };
@@ -29,6 +32,7 @@ export const ZEN = {
   circle: '#ebf3ff',
   triangle: '#0083cc',
   page01: '#0083cc',
+  page02: '#0083cc',
   square: '#25a3a0',
   tag: '#71e8b3'
 };
