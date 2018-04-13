@@ -74,7 +74,7 @@ class Mask extends Component {
   appear = () => {
     const dist = 3 * this.props.r;
     TweenLite.fromTo(this._circleMask, 1, {
-      attr: { cx: dist, cy: dist }
+      attr: { cx: -dist, cy: dist }
     }, {
       attr: { cx: 0, cy: 0 },
       ease: Power3.easeInOut,
@@ -86,7 +86,7 @@ class Mask extends Component {
     TweenLite.fromTo(this._circleMask, 0.6, {
       attr: { cx: 0, cy: 0 }
     }, {
-      attr: { cx: dist, cy: dist },
+      attr: { cx: -dist, cy: dist },
       ease: Power3.easeInOut,
     });
   }
