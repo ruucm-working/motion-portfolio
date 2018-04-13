@@ -33,18 +33,18 @@ class Page02Content extends Component {
   }
   appear = () => {
     TweenLite.fromTo(this._page02Content, 1, {
-      left: 0, opacity: 0
+      left: 0, opacity: 0,
     },
     {
-      left: 100, opacity: 1
+      left: 100, opacity: 1,
     })
   }
   disappear = () => {
     TweenLite.fromTo(this._page02Content, 1, {
-      left:0, opacity:1
+      left:100, opacity:1
     },
     {
-      left:100, opacity:0
+      left:0, opacity:0
     })
   }
 

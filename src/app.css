@@ -23,7 +23,14 @@ body {
 /* My Styles */
 .contents {
   position: absolute;
+  width: 100%;
 }
 #page01-content {
   background: red;
+}
+
+#page01-content, #page02-content, #page03-content {
+  position: absolute;
+  left: 0;
+  top: 100px;
 }
