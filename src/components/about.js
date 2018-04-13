@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Radium from 'radium';
 
 function About({ toggleAbout, isVisible }) {
-  const position = isVisible ? { transform: 'translate3d(0, 0, 0)' } :
+  const position = isVisible ? { transform: 'translate3d(0, 10%, 0)' } :
                                { transform: 'translate3d(0, 100%, 0)' };
 
   const styles = Object.assign({}, { backgroundColor: '#00ffff' }, position);

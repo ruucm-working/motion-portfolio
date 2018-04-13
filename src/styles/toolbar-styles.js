@@ -1,4 +1,5 @@
 import * as R from 'ramda';
+import { log } from 'ruucm-util';
 
 /**
  * Get fill based on state
@@ -82,6 +83,8 @@ const toolbarStyles = (s, width) => ({
 
 export function getStyles({width, circle, triangle, square, fills}) {
   const s = getSize(width);
+  log('s', s);
+  log('width', width);
 
   return {
     circleStyles: circleStyles(s, circle, fills.circle),

@@ -50,6 +50,7 @@
     "postcss-basscss": "^0.2.3",
     "radium": "0.15.3",
     "react": "0.14.0",
-    "react-dom": "0.14.0"
+    "react-dom": "0.14.0",
+    "ruucm-util": "^0.6.0"
   }
 }

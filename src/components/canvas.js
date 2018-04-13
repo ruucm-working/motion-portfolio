@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BG from '../components/bg';
 import Circle from '../components/circle';
+import Circle2 from '../components/circle2';
 import Square from '../components/square';
 import Triangle from '../components/triangle';
 
