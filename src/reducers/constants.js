@@ -1,5 +1,5 @@
 export const BLEND_FILTER = ''; // 'hard-light';
-export const BASE = 0.2;
+export const BASE = 2;
 export const JAZZY = {
   bg: '#ff00ff',
   circle: '#FC615D',

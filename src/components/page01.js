@@ -3,6 +3,7 @@ import Radium from 'radium';
 import * as R from 'ramda';
 import TweenLite from 'gsap';
 import tl, { t1} from '../styles/loading-timeline';
+import { log } from 'ruucm-util';
 
 const triangleStyles = {
   backfaceVisibility: 'hidden',
@@ -72,8 +73,9 @@ class Mask extends Component {
   }
 
   appear = () => {
-    const dist = 3 * this.props.r;
-    TweenLite.fromTo(this._circleMask, 1, {
+    const dist = 3 * this.props.r * 0.39;
+    log('dist', dist);
+    TweenLite.fromTo(this._circleMask, 6, {
       attr: { cx: -dist, cy: dist }
     }, {
       attr: { cx: 0, cy: 0 },
@@ -82,8 +84,8 @@ class Mask extends Component {
   }
 
   disappear = () => {
-    const dist = 3 * this.props.r;
-    TweenLite.fromTo(this._circleMask, 0.6, {
+    const dist = 3 * this.props.r * 0.39;
+    TweenLite.fromTo(this._circleMask, 3, {
       attr: { cx: 0, cy: 0 }
     }, {
       attr: { cx: -dist, cy: dist },
