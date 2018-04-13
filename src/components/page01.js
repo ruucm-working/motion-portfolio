@@ -8,7 +8,7 @@ import { log } from 'ruucm-util';
 const triangleStyles = {
   backfaceVisibility: 'hidden',
   perspective: 1000,
-  opacity: 0.5
+  opacity: 1
 };
 
 /**
