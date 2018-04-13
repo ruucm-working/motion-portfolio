@@ -8,6 +8,7 @@ import Toolbar from '../components/toolbar';
 import About from '../components/about';
 import ColourSelector from '../components/colour-selector';
 import * as R from 'ramda';
+import { log } from 'ruucm-util';
 
 class App extends Component {
 
@@ -22,6 +23,7 @@ class App extends Component {
     window.addEventListener('resize', this.handleResize);
     this.handleResize();
     window.addEventListener('keyup', this.props.triggerKeyboardEvents);
+    log('this.props', this.props);
   }
 
   componentWillUnmount() {

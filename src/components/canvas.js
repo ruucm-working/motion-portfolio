@@ -21,9 +21,9 @@ const Canvas = ({ core, square, triangle, circle }) => {
         w={ width }
         h={ height } />
 
-      <Square { ...square } />
+      {/* <Square { ...square } /> */}
       {/* <Triangle { ...triangle } /> */}
-      <Circle { ...circle } />
+      {/* <Circle { ...circle } /> */}
       <Page01 { ...triangle } />
     </g>
   ) : null;

@@ -15,15 +15,15 @@ const triangleStyles = {
  */
 class Page01 extends Component {
   componentDidMount() {
-    const { y, r } = this.props;
+    // const { y, r } = this.props;
 
-    tl.fromTo(this._triangle, t1, {
-      transformOrigin: '50% 50%',
-      transform: `translate3d(0px, ${-y-r}px, 0px)`,
-    }, {
-      transform: `translate3d(0px, 0px, 0px)`,
-      ease: Elastic.easeOut.config(1, 0.75),
-    }, 'phase-1');
+    // tl.fromTo(this._triangle, t1, {
+    //   transformOrigin: '50% 50%',
+    //   transform: `translate3d(0px, ${-y-r}px, 0px)`,
+    // }, {
+    //   transform: `translate3d(0px, 0px, 0px)`,
+    //   ease: Elastic.easeOut.config(1, 0.75),
+    // }, 'phase-1');
   }
 
   render() {
