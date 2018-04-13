@@ -23,10 +23,6 @@ const Canvas = ({ core, square, triangle, circle, page01, page02, page03 }) => {
       {/* <BG fill={ bgFill }
         w={ width }
         h={ height } /> */}
-
-      {/* <Square { ...square } /> */}
-      {/* <Triangle { ...triangle } /> */}
-      {/* <Circle { ...circle } /> */}
       <Page01 { ...page01 } />
       <Page02 { ...page02 } />
       <Page03 { ...page03 } />

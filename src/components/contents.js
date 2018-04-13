@@ -14,7 +14,7 @@ import { log } from 'ruucm-util';
  * This component generates the base SVG
  * and sets up all the sub-components
  */
-const Contents = ({ core, square, triangle, circle, page01, page02, page03 }) => {
+const Contents = ({ page01, page02, page03 }) => {
   return (
     <div className='contents'>
       <h1>hey</h1>
