@@ -45,17 +45,11 @@ const circleStyles = (s, circle, fill) => R.merge(base(s), {
 });
 
 const triangleStyles = (s, triangle, fill) => R.merge(base(s), {
-  width: 0,
-  height: 0,
-  borderLeft: `${s * 0.6}vw solid transparent`,
-  borderRight: `${s * 0.6}vw solid transparent`,
-  borderBottom: `${s}vw solid ${getFill(triangle, fill)}`,
-  marginRight: '0.75rem'
+  backgroundColor: getFill(triangle, fill)
 });
 
 const squareStyles = (s, square, fill) => R.merge(base(s), {
-  backgroundColor: getFill(square, fill),
-  marginRight: '0.75rem'
+  backgroundColor: getFill(square, fill)
 });
 
 const aboutButtonStyles = (s, width) => {

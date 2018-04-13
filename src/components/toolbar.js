@@ -32,12 +32,14 @@ class Toolbar extends Component {
             ref="circle">
           </div>
 
-          <div style={ triangleStyles }
+          <div className="mr1 circle"
+            style={ triangleStyles }
             onClick={ toggleTriangle }
             ref="triangle">
           </div>
 
-          <div style={ squareStyles }
+          <div className="mr1 circle"
+            style={ squareStyles }
             onClick={ toggleSquare }
             ref="square">
           </div>
