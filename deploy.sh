@@ -6,11 +6,11 @@ main() {
   deploy_branch=${GIT_DEPLOY_BRANCH:-gh-pages}
 
   #if no user identity is already set in the current git environment, use this:
-  default_username=${GIT_DEPLOY_USERNAME:-winkerVSbecks}
-  default_email=${GIT_DEPLOY_EMAIL:-varunvachhar@gmail.com}
+  default_username=${GIT_DEPLOY_USERNAME:-ruucm}
+  default_email=${GIT_DEPLOY_EMAIL:-ruucm.a@gmail.com}
 
   #repository to deploy to. must be readable and writable.
-  repo=${GIT_DEPLOY_REPO:-git@github.com:winkerVSbecks/oam-site.git}
+  repo=${GIT_DEPLOY_REPO:-git@github.com:ruucm-working/motion-portfolio.git}
 
   #append commit hash to the end of message by default
   append_hash=true
