@@ -19,3 +19,11 @@ body {
   .not-sm-mb3 { margin-bottom: 2rem; }
   .not-sm-mb4 { margin-bottom: 4rem; }
 }
+
+/* My Styles */
+.contents {
+  position: absolute;
+}
+#page01-content {
+  background: red;
+}
