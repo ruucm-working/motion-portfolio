@@ -17,7 +17,7 @@ import { log } from 'ruucm-util';
 const Contents = ({ page01, page02, page03 }) => {
   return (
     <div className='contents'>
-      <h1>hey</h1>
+      <h1>ruucm is working now</h1>
       <Page01Content { ...page01 } />
       <Page02Content { ...page02 } />
       <Page03Content { ...page03 } />
