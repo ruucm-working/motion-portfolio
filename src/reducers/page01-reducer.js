@@ -1,4 +1,4 @@
-import { WINDOW_RESIZE, TOGGLE_TRIANGLE, SET_PALETTE }
+import { WINDOW_RESIZE, SET_PALETTE, TOGGLE_PAGE01 }
   from '../actions/constants';
 import { PALETTE, BASE } from './constants';
 import Sounds from '../audio';
@@ -32,7 +32,7 @@ export default function page01(state = initialState, action) {
     case WINDOW_RESIZE:
       return R.merge(state, getTriangleVertices(action));
 
-    case TOGGLE_TRIANGLE:
+    case TOGGLE_PAGE01:
       const visible = !state.visible;
       state.sound.play();
       return R.merge(state, { visible });

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getStyles } from '../styles/toolbar-styles';
 import tl, { t3 } from '../styles/loading-timeline';
+import { log } from 'ruucm-util';
 
 /**
  * The Toolbar
@@ -15,7 +16,7 @@ class Toolbar extends Component {
   }
 
   render() {
-    const { toggleTriangle, toggleSquare, toggleCircle, toggleAbout } = this.props;
+    const { toggleTriangle, toggleSquare, toggleCircle, togglePage01, toggleAbout } = this.props;
     const { toolbarStyles, containerStyles, circleStyles,
       triangleStyles, squareStyles, aboutButtonStyles,
       width } = getStyles(this.props);
@@ -25,10 +26,11 @@ class Toolbar extends Component {
         style={ toolbarStyles }>
         <div className="flex mx-auto col-12 flex-stretch"
           style={ containerStyles }>
-
+          {log('togglePage01', togglePage01)}
+          {log('toggleTriangle', toggleTriangle)}
           <div className="mr1 circle"
             style={ circleStyles }
-            onClick={ toggleCircle }
+            onClick={ togglePage01 }
             ref="circle">
           </div>
 
