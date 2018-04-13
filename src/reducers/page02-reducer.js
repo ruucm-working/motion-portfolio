@@ -15,7 +15,7 @@ const initialState = {
   ],
   r: 0,
   fill: PALETTE.JAZZY.page02,
-  visible: true,
+  visible: false,
   sound: Sounds.JAZZY.page02
 };
 

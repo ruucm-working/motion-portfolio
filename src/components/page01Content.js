@@ -15,6 +15,9 @@ const triangleStyles = {
  * The Page01Content
  */
 class Page01Content extends Component {
+  componentDidMount() {
+    this.disappear();
+  }
   shouldComponentUpdate(nextProps) {
     return !R.equals(this.props, nextProps);
   }

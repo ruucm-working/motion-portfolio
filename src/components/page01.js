@@ -44,7 +44,9 @@ export default Radium(Page01);
  * Mask
  */
 class Mask extends Component {
-
+  componentDidMount() {
+    this.disappear();
+  }
   shouldComponentUpdate(nextProps) {
     return !R.equals(this.props, nextProps);
   }
