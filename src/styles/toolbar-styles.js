@@ -52,6 +52,18 @@ const squareStyles = (s, square, fill) => R.merge(base(s), {
   backgroundColor: getFill(square, fill)
 });
 
+const page01Styles = (s, page01, fill) => R.merge(base(s), {
+  backgroundColor: getFill(page01, fill)
+});
+const page02Styles = (s, page02, fill) => R.merge(base(s), {
+  backgroundColor: getFill(page02, fill)
+});
+const page03Styles = (s, page03, fill) => R.merge(base(s), {
+  backgroundColor: getFill(page03, fill)
+});
+
+
+
 const aboutButtonStyles = (s, width) => {
   return {
     cursor: 'pointer',
@@ -75,15 +87,22 @@ const toolbarStyles = (s, width) => ({
   paddingRight: width < 550 ? '1rem' : '2rem'
 });
 
-export function getStyles({width, circle, triangle, square, fills}) {
+export function getStyles({width, circle, triangle, square, page01, page02, page03, fills}) {
   const s = getSize(width);
   log('s', s);
   log('width', width);
+  log('page01', page01);
+  log('page03', page03);
+  log('page01Styles', page01Styles(s, page01, fills.page01));
+  log('page03Styles', page03Styles(s, page03, fills.page03));
 
   return {
     circleStyles: circleStyles(s, circle, fills.circle),
     triangleStyles: triangleStyles(s, triangle, fills.triangle),
     squareStyles: squareStyles(s, square, fills.square),
+    page01Styles: page01Styles(s, page01, fills.page01),
+    page02Styles: page02Styles(s, page02, fills.page02),
+    page03Styles: page03Styles(s, page03, fills.page03),
     containerStyles: containerStyles(s, width),
     toolbarStyles: toolbarStyles(s, width),
     aboutButtonStyles: aboutButtonStyles(s, width)

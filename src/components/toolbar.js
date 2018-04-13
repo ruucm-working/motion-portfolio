@@ -18,28 +18,28 @@ class Toolbar extends Component {
   render() {
     const { toggleTriangle, toggleSquare, toggleCircle, togglePage01, togglePage02, togglePage03, toggleAbout } = this.props;
     const { toolbarStyles, containerStyles, circleStyles,
-      triangleStyles, squareStyles, aboutButtonStyles,
+      triangleStyles, squareStyles, page01Styles, page02Styles, page03Styles, aboutButtonStyles,
       width } = getStyles(this.props);
-
+    log('this.props(getStyles)', this.props);
     return (
       <div className="absolute bottom-0 left-0 flex py2 col-12 border-box"
         style={ toolbarStyles }>
         <div className="flex mx-auto col-12 flex-stretch"
           style={ containerStyles }>
           <div className="mr1 circle"
-            style={ circleStyles }
+            style={ page01Styles }
             onClick={ togglePage01 }
             ref="circle">
           </div>
 
           <div className="mr1 circle"
-            style={ triangleStyles }
+            style={ page02Styles }
             onClick={ togglePage02 }
             ref="triangle">
           </div>
 
           <div className="mr1 circle"
-            style={ squareStyles }
+            style={ page03Styles }
             onClick={ togglePage03 }
             ref="square">
           </div>

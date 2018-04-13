@@ -36,6 +36,9 @@ class App extends Component {
       triangle: this.props.triangle.visible,
       square: this.props.square.visible,
       circle: this.props.circle.visible,
+      page01: this.props.page01.visible,
+      page02: this.props.page02.visible,
+      page03: this.props.page03.visible,
       toggleTriangle: this.props.toggleTriangle,
       toggleSquare: this.props.toggleSquare,
       toggleCircle: this.props.toggleCircle,
@@ -47,7 +50,10 @@ class App extends Component {
       fills: {
         triangle: this.props.triangle.fill,
         square: this.props.square.fill,
-        circle: this.props.circle.fill
+        circle: this.props.circle.fill,
+        page01: this.props.page01.fill,
+        page02: this.props.page02.fill,
+        page03: this.props.page03.fill,
       }
     };
 
