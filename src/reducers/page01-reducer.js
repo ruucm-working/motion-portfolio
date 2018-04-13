@@ -3,6 +3,7 @@ import { WINDOW_RESIZE, TOGGLE_TRIANGLE, SET_PALETTE }
 import { PALETTE, BASE } from './constants';
 import Sounds from '../audio';
 import * as R from 'ramda';
+import { log } from 'ruucm-util';
 
 const initialState = {
   x: 0,
@@ -24,7 +25,8 @@ const initialState = {
  * @param  {Object} action
  */
 export default function page01(state = initialState, action) {
-
+  log('state', state);
+  log('action.type', action.type);
   switch (action.type) {
 
     case WINDOW_RESIZE:

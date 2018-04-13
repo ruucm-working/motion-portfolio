@@ -25,24 +25,28 @@ const Sounds = {
     base: new Howl({ src: [oam1] }),
     circle: new Howl({ src: [oam1Circ] }),
     triangle: new Howl({ src: [oam1Sq] }),
+    page01: new Howl({ src: [oam1Sq] }),
     square: new Howl({ src: [oam1Tri] })
   },
   AWAKE: {
     base: new Howl({ src: [oam2] }),
     circle: new Howl({ src: [oam2Circ] }),
     triangle: new Howl({ src: [oam2Sq] }),
+    page01: new Howl({ src: [oam2Sq] }),
     square: new Howl({ src: [oam2Tri] })
   },
   SLEEPY: {
     base: new Howl({ src: [oam3] }),
     circle: new Howl({ src: [oam3Circ] }),
     triangle: new Howl({ src: [oam3Sq] }),
+    page01: new Howl({ src: [oam3Sq] }),
     square: new Howl({ src: [oam3Tri] })
   },
   ZEN: {
     base: new Howl({ src: [oam4] }),
     circle: new Howl({ src: [oam4Circ] }),
     triangle: new Howl({ src: [oam4Sq] }),
+    page01: new Howl({ src: [oam4Sq] }),
     square: new Howl({ src: [oam4Tri] })
   }
 };

@@ -4,13 +4,14 @@ import Circle from '../components/circle';
 import Square from '../components/square';
 import Triangle from '../components/triangle';
 import Page01 from '../components/page01';
+import { log } from 'ruucm-util';
 
 /**
  * SVG Canvas
  * This component generates the base SVG
  * and sets up all the sub-components
  */
-const Canvas = ({ core, square, triangle, circle }) => {
+const Canvas = ({ core, square, triangle, circle, page01 }) => {
 
   const { width, height, bgFill } = core;
   const viewBox = [0, 0, width, height].join(' ');
@@ -24,7 +25,9 @@ const Canvas = ({ core, square, triangle, circle }) => {
       {/* <Square { ...square } /> */}
       {/* <Triangle { ...triangle } /> */}
       {/* <Circle { ...circle } /> */}
-      <Page01 { ...triangle } />
+      {log('triangle', triangle)}
+      {log('page01', page01)}
+      <Page01 { ...page01 } />
     </g>
   ) : null;
 
