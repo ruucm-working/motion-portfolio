@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as Actions from '../actions';
 import Canvas from '../components/canvas';
+import Contents from '../components/contents';
 import Toolbar from '../components/toolbar';
 import About from '../components/about';
 import ColourSelector from '../components/colour-selector';
@@ -56,6 +57,7 @@ class App extends Component {
     return (
       <div className="overflow-hidden">
         <ColourSelector { ...colourSelectorProps } />
+        <Contents { ...this.props } />
         <Canvas { ...this.props } />
         <Toolbar { ...toolbarProps } />
         <About toggleAbout={ this.props.toggleAbout }
