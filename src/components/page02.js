@@ -15,22 +15,9 @@ const triangleStyles = {
  * The Page02
  */
 class Page02 extends Component {
-  componentDidMount() {
-    // const { y, r } = this.props;
-
-    // tl.fromTo(this._triangle, t1, {
-    //   transformOrigin: '50% 50%',
-    //   transform: `translate3d(0px, ${-y-r}px, 0px)`,
-    // }, {
-    //   transform: `translate3d(0px, 0px, 0px)`,
-    //   ease: Elastic.easeOut.config(1, 0.75),
-    // }, 'phase-1');
-  }
-
   render() {
     const { fill, vertices, visible, x, y, r } = this.props;
     const d = buildD(vertices);
-    log('fill', fill);
     
     return (
       <g style={{
@@ -47,7 +34,6 @@ class Page02 extends Component {
       </g>
     );
   };
-
 }
 
 export default Radium(Page02);
@@ -64,7 +50,6 @@ class Mask extends Component {
 
   componentDidUpdate(prevProps) {
     const { visible } = this.props;
-    log('this.props(page02)', this.props)
     if (prevProps.visible === visible) { return; }
 
     if (visible) {
@@ -76,8 +61,6 @@ class Mask extends Component {
 
   appear = () => {
     const dist = 3 * this.props.r * 0.39;
-    log('dist', dist);
-    log('this._circleMask', this._circleMask);
     TweenLite.fromTo(this._circleMask, 6, {
       attr: { cx: -dist, cy: dist }
     }, {
