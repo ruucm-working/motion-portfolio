@@ -35,8 +35,8 @@ function getSize(width) {
 
 const base = (s) => ({
   cursor: 'pointer',
-  width: s + 'vw',
-  height: s + 'vw',
+  width: s/2 + 'vw',
+  height: s/2 + 'vw',
   transition: 'width ease-in-out 300ms, height ease-in-out 300ms'
 });
 

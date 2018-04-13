@@ -4,9 +4,9 @@ export const JAZZY = {
   bg: '#ff00ff',
   circle: '#FC615D',
   triangle: '#FDBC40',
-  page01: '#FC615D',
-  page02: '#FCBA4E',
-  page03: '#3CC755',
+  page01: '#1B45A9',
+  page02: '#FFD484',
+  page03: '#9390FB',
   square: '#34C84A',
   tag: '#00ffff'
 };
