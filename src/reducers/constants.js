@@ -2,10 +2,10 @@ export const BLEND_FILTER = ''; // 'hard-light';
 export const BASE = 0.2;
 export const JAZZY = {
   bg: '#ff00ff',
-  circle: '#ffff00',
-  triangle: '#00ffff',
-  page01: '#00ffff',
-  square: '#0000ff',
+  circle: '#FC615D',
+  triangle: '#FDBC40',
+  page01: '#FDBC40',
+  square: '#34C84A',
   tag: '#00ffff'
 };
 export const AWAKE = {
