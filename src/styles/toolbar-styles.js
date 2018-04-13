@@ -7,7 +7,7 @@ import { log } from 'ruucm-util';
  * @return {String}  Fill colour
  */
 function getFill(isVisible, fill) {
-  return isVisible ? fill : '#999999';
+  return isVisible ? fill : '#DCDCDC';
 }
 
 /**

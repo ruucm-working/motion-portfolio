@@ -15,25 +15,6 @@ import { log } from 'ruucm-util';
  * and sets up all the sub-components
  */
 const Contents = ({ core, square, triangle, circle, page01, page02, page03 }) => {
-
-  const { width, height, bgFill } = core;
-  const viewBox = [0, 0, width, height].join(' ');
-
-  const content = (width !== 0 && height !== 0) ? (
-    <g>
-      <BG fill={ bgFill }
-        w={ width }
-        h={ height } />
-
-      {/* <Square { ...square } /> */}
-      {/* <Triangle { ...triangle } /> */}
-      {/* <Circle { ...circle } /> */}
-      {log('triangle', triangle)}
-      {log('page01', page01)}
-      <Page01Content { ...page01 } />
-    </g>
-  ) : null;
-
   return (
     <div className='contents'>
       <h1>hey</h1>
