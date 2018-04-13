@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import BG from '../components/bg';
 import Circle from '../components/circle';
-import Circle2 from '../components/circle2';
 import Square from '../components/square';
 import Triangle from '../components/triangle';
+import Page01 from '../components/page01';
 
 /**
  * SVG Canvas
@@ -22,8 +22,9 @@ const Canvas = ({ core, square, triangle, circle }) => {
         h={ height } />
 
       <Square { ...square } />
-      <Triangle { ...triangle } />
+      {/* <Triangle { ...triangle } /> */}
       <Circle { ...circle } />
+      <Page01 { ...triangle } />
     </g>
   ) : null;
 
