@@ -27,6 +27,7 @@ const Sounds = {
     triangle: new Howl({ src: [oam1Sq] }),
     page01: new Howl({ src: [oam1] }),
     page02: new Howl({ src: [oam1Circ] }),
+    page03: new Howl({ src: [oam1Tri] }),
     square: new Howl({ src: [oam1Tri] })
   },
   AWAKE: {

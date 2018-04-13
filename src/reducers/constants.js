@@ -6,6 +6,7 @@ export const JAZZY = {
   triangle: '#FDBC40',
   page01: '#FC615D',
   page02: '#FCBA4E',
+  page03: '#3CC755',
   square: '#34C84A',
   tag: '#00ffff'
 };
