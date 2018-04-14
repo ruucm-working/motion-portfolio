@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
+import img from '../../img/profile.png'
 
 function About({ toggleAbout, isVisible }) {
-  const position = isVisible ? { transform: 'translate3d(0, 10%, 0)' } :
+  const position = isVisible ? { transform: 'translate3d(0, 15%, 0)' } :
                                { transform: 'translate3d(0, 100%, 0)' };
 
   const styles = Object.assign({}, { backgroundColor: '#00ffff' }, position);
 
   return (
-    <div className={ `fixed left-0 top-0 right-0 bottom-0 white flex flex-center an-all` }
+    <div className={ `fixed left-0 top-0 right-0 bottom-0 white flex flex-center an-all about` }
       style={ styles }>
       <div className="center px2 mx-auto">
-        { oam }
+        <img src={img} />
 
-        <p className="h2 not-sm-mb4">OAM is an experiment<br className="sm-show md-show lg-show" />in mixing sound, colours, and geometries<br className="sm-show md-show lg-show" />on the web.</p>
-        <p className="h3 m0">Brought to you by <a className="link" href="http://ainsleywagoner.com/">Ainsley</a> &amp; <a className="link" href="http://varun.ca/">Varun</a></p>
+        <p className="h2 not-sm-mb4">'ruucm is working now' is Seoul Based Design Studio,<br className="sm-show md-show lg-show" /> focused on colors and motion<br className="sm-show md-show lg-show" /></p>
+        <p className="h3 m0">mail.<a className="link" href="mailto:contact@ruucm.work"> contact@ruucm.work</a></p>
       </div>
 
       <div className="absolute top-0 right-0 m2 pointer"

@@ -59,6 +59,10 @@ p {
   margin-top: 1rem;
   font-size: 20px;
 }
+.about img {
+  max-width: 70%;
+  margin: 0 auto;
+}
 @media (max-width: 500px) {
   #page01-content .details, #page02-content .details, #page03-content .details {
     width: 80vw;
