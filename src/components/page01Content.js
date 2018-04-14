@@ -53,8 +53,8 @@ class Page01Content extends Component {
     const d = buildD(vertices);
 
     return (
-      <div id='page01-content' ref={(c) => this._page01Content = c} >
-        <h2>page01-content</h2>
+      <div id='page01-content'>
+        <h2 ref={(c) => this._page01Content = c}>page01-content</h2>
       </div>
     );
   };
