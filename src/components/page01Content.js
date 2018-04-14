@@ -39,6 +39,13 @@ class Page01Content extends Component {
     {
       left: 100, opacity: 1
     })
+
+    TweenLite.fromTo(this._page01Image, 1, {
+      top: 0, opacity: 0,
+    }, {
+      top: 40 + 'vh', opacity: 1,
+      ease: Power3.easeInOut,
+    }, 'phase-1')
   }
   disappear = () => {
     TweenLite.fromTo(this._page01Content, 1, {
@@ -47,6 +54,13 @@ class Page01Content extends Component {
     {
       left:0, opacity:0
     })
+
+    TweenLite.fromTo(this._page01Image, 1, {
+      top: 40 + 'vh', opacity: 1,
+    }, {
+      top: 0, opacity: 0,
+      ease: Power3.easeInOut,
+    }, 'phase-1')
   }
 
   render() {
@@ -55,8 +69,11 @@ class Page01Content extends Component {
 
     return (
       <div id='page01-content'>
-        <h2 ref={(c) => this._page01Content = c}>page01-content</h2>
-        <img src={img} />
+        <h2 ref={(c) => this._page01Content = c}>[WORDPRESS EXPERT]</h2>
+        <div className='details' ref={(b) => this._page01Image = b}>
+          <a href='http://ollybolly.org/en/en-special-edition/'><img src={img} /></a>
+          <p>(click here!)</p>
+        </div>
       </div>
     );
   };

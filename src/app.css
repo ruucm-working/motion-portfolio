@@ -8,7 +8,7 @@
 .top-100 { top: 100vh; }
 .an-all { transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-body, h1, h2 {
+body, h1, h2, p {
   font-family: ubuntu, 'Montserrat', sans-serif;
 }
 h1, h2 {
@@ -38,4 +38,29 @@ h1, h2 {
 }
 .mr1 {
   margin-right: 0.8rem !important;
+}
+
+#page01-content .details {
+  width: 40vw;
+  right: 150px;
+  top: 40vh;
+  position: absolute;
+}
+#page01-content img {
+  border-radius: 20px;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.29);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.29);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.29);
+}
+p {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  #page01-content details {
+    right: 60px;
+  }
 }
