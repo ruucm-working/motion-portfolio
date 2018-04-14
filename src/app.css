@@ -61,7 +61,7 @@ p {
 }
 @media (max-width: 500px) {
   #page01-content .details, #page02-content .details, #page03-content .details {
-    width: 70vw;
+    width: 80vw;
     right: 60px;
   }
 }

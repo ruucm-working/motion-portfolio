@@ -51,7 +51,7 @@ class Toolbar extends Component {
             <svg viewBox={ width < 400 ? '0 0 40 20' : '0 0 20 20' }
               ref="toggleAbout">
               <text x="10" y="13">
-                {/* About */}
+                About
               </text>
             </svg>
           </div>
