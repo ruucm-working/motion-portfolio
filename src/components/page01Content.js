@@ -72,7 +72,7 @@ class Page01Content extends Component {
         <h2 ref={(c) => this._page01Content = c}>[WORDPRESS EXPERT]</h2>
         <div className='details' ref={(b) => this._page01Image = b}>
           <a href='http://ollybolly.org/en/en-special-edition/'><img src={img} /></a>
-          <p>(click here!)</p>
+          <p>click here !</p>
         </div>
       </div>
     );

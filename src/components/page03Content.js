@@ -4,6 +4,7 @@ import * as R from 'ramda';
 import TweenLite from 'gsap';
 import tl, { t1} from '../styles/loading-timeline';
 import { log } from 'ruucm-util';
+import img from '../../img/c.png'
 
 const triangleStyles = {
   backfaceVisibility: 'hidden',
@@ -32,20 +33,34 @@ class Page03Content extends Component {
     }
   }
   appear = () => {
-    TweenLite.fromTo(this._page03Content, 1, {
+    TweenLite.fromTo(this._page01Content, 1, {
       left: 0, opacity: 0
     },
     {
       left: 100, opacity: 1
     })
+
+    TweenLite.fromTo(this._page01Image, 1, {
+      top: 0, opacity: 0,
+    }, {
+      top: 30 + 'vh', opacity: 1,
+      ease: Power3.easeInOut,
+    }, 'phase-1')
   }
   disappear = () => {
-    TweenLite.fromTo(this._page03Content, 1, {
+    TweenLite.fromTo(this._page01Content, 1, {
       left:100, opacity:1
     },
     {
       left:0, opacity:0
     })
+
+    TweenLite.fromTo(this._page01Image, 1, {
+      top: 30 + 'vh', opacity: 1,
+    }, {
+      top: 0, opacity: 0,
+      ease: Power3.easeInOut,
+    }, 'phase-1')
   }
 
   render() {
@@ -54,7 +69,11 @@ class Page03Content extends Component {
 
     return (
       <div id='page03-content'>
-        <h2 ref={(c) => this._page03Content = c} >page03-content</h2>
+        <h2 ref={(c) => this._page01Content = c}>[PIXEL PERFECT]</h2>
+        <div className='details' ref={(b) => this._page01Image = b}>
+          <a href='http://yourright.co.kr'><img src={img} /></a>
+          <p>click here !</p>
+        </div>
       </div>
     );
   };

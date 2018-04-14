@@ -40,13 +40,13 @@ h1, h2 {
   margin-right: 0.8rem !important;
 }
 
-#page01-content .details {
+#page01-content .details, #page02-content .details, #page03-content .details {
   width: 40vw;
   right: 150px;
   top: 40vh;
   position: absolute;
 }
-#page01-content img {
+#page01-content img, #page02-content img, #page03-content img {
   border-radius: 20px;
   width: 100%;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.29);
