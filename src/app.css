@@ -60,7 +60,8 @@ p {
   font-size: 20px;
 }
 @media (max-width: 500px) {
-  #page01-content details {
+  #page01-content .details, #page02-content .details, #page03-content .details {
+    width: 70vw;
     right: 60px;
   }
 }
