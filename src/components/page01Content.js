@@ -4,6 +4,7 @@ import * as R from 'ramda';
 import TweenLite from 'gsap';
 import tl, { t1} from '../styles/loading-timeline';
 import { log } from 'ruucm-util';
+import img from '../../img/a.png'
 
 const triangleStyles = {
   backfaceVisibility: 'hidden',
@@ -55,6 +56,7 @@ class Page01Content extends Component {
     return (
       <div id='page01-content'>
         <h2 ref={(c) => this._page01Content = c}>page01-content</h2>
+        <img src={img} />
       </div>
     );
   };

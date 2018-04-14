@@ -70,6 +70,13 @@ module.exports = function makeWebpackConfig(options) {
         {
           test: /\.(mp3|wav)/,
           loader: 'file-loader?name=[hash].[ext]'
+        },
+        {
+          test    : /\.(png|jpg|gif)$/,
+          loader  : 'url-loader',
+          options : {
+            limit : 8192,
+          },
         }
       ]
     },
